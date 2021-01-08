@@ -1,0 +1,15 @@
+.image-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 0 10px;
+    grid-auto-rows: 10px;
+}
+
+.image-list img{
+    width: 250px;
+    grid-row-end: span 2;
+}
+
+/*the problem with the grid here is that we can't see some images because their 
+size are big while the smaller ones leave a large white space below them so to 
+solve this situation we will use js and here is what react can help us with. */
